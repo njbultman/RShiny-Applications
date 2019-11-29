@@ -1,11 +1,12 @@
-library(quantmod)
-library(shiny)
-library(htmlwidgets)
-library(tidyverse)
-library(PerformanceAnalytics)
-library(shinycssloaders)
-library(quantstrat)
-library(plotly)
+if(!require("pacman")) install.packages("pacman")
+pacman::p_load(quantmod,
+                shiny,
+                htmlwidgets,
+                tidyverse,
+                PerformanceAnalytics,
+                shinycssloaders,
+                quantstrat,
+                plotly)
 
 ui <- fluidPage( 
   navbarPage(title = "Stock Analysis",
